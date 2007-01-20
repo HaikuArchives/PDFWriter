@@ -1,14 +1,12 @@
 /*
 
-PDF Writer printer driver.
+AboutText.cpp
 
-Copyright (c) 2001 OpenBeOS. 
+Copyright (c) 2001-2006 Haiku. 
 
-Authors: 
-	Philippe Houdoin
-	Simon Gauvin	
+Author: 
 	Michael Pfeiffer
-	
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
@@ -29,42 +27,20 @@ THE SOFTWARE.
 
 */
 
-#ifndef STATUS_WINDOW_H
-#define STATUS_WINDOW_H
-#include <InterfaceKit.h>
-#include <SupportKit.h>
+#include <InterfaceDefs.h>
 
-//class PrinterDriver;
-#include "PrinterDriver.h"
-#include "InterfaceUtils.h"
-#include "Utils.h"
-
-class StatusWindow : public HWindow 
-{
-private:
-	int32 fPass;
-	int32 fPages;
-	
-	BString fPage;
-	int32 fPageCount;
-	BStringView *fPageLabel;
-	BStatusBar *fPageStatus;
-	BButton *fCancel;
-	PrinterDriver *fPrinterDriver;
-	int32      fReportIndex;
-	BTextView* fReport;
-	sem_id     fCloseSem;
-	CloseOption fCloseOption;
-
-	void UpdateReport();
-
-public:
-	typedef HWindow inherited;
-	
-	StatusWindow(int32 passes, int32 pages, PrinterDriver *pd);
-	
-	void MessageReceived(BMessage *msg);
-	void NextPage();
-	void WaitForClose();
-};
-#endif
+static const char* 
+kAbout =
+"PDF Writer for BeOS\n"
+B_UTF8_COPYRIGHT " 2001-2004 Haiku\n"
+"\n"
+"Philippe Houdoin\n"
+"\tProject Leader\n\n"
+"Simon Gauvin\n"
+"\tGUI Design\n\n"
+"Michael Pfeiffer\n"
+"\tPDF Generation\n"
+"\tConfiguration\n"
+"\tInteractive Features\n"
+"\t" B_UTF8_ELLIPSIS
+;
