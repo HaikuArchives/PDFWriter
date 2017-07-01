@@ -236,7 +236,7 @@ PDFWriter::SetAttribute(const char* name, const char* value)
 		file->WriteAttr(name, B_STRING_TYPE, 0, value, strlen(value) + 1);
 }
 
-
+int main(int, char*){}
 status_t
 PDFWriter::InitWriter()
 {
