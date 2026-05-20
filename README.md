@@ -1,5 +1,5 @@
 # PDF Writer
-PDF Writer is now part of the print_kit of the [Haiku Project](http://www.haiku-os.org').
+PDF Writer is now part of the print_kit of the [Haiku Project](http://www.haiku-os.org).
 
 
 ## Overview
@@ -15,6 +15,22 @@ PDF Writer plugs into Haiku's print_server as a printer driver. This allows  any
  | Michael Pfeiffer  | michael.pfeiffer@utanet.at     | German |
  | Simon Gauvin      | gauvins@cs.dal.ca              | French / English |
 
+## Screenshots
+**Print Setup**
+
+![Print Setup](doc/images/screenshot1.png)
+
+**Job Setup**
+
+![Job Setup](doc/images/screenshot2.png)
+
+**Document Information**
+
+![Document Information](doc/images/screenshot3.png)
+
+**Paper Setup**
+
+![Paper Setup](doc/images/screenshot4.png)
 
 ## Installation
 
