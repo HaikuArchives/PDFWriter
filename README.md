@@ -18,19 +18,19 @@ PDF Writer plugs into Haiku's print_server as a printer driver. This allows  any
 ## Screenshots
 **Print Setup**
 
-![Print Setup](doc/images/screenshot1.png)
+![Print Setup](doc/images/screenshotPrintSetup.png)
 
 **Job Setup**
 
-![Job Setup](doc/images/screenshot2.png)
+![Job Setup](doc/images/screenshotJobSetup.png)
 
 **Document Information**
 
-![Document Information](doc/images/screenshot3.png)
+![Document Information](doc/images/screenshotDocInfo.png)
 
 **Paper Setup**
 
-![Paper Setup](doc/images/screenshot4.png)
+![Paper Setup](doc/images/screenshotPaperSetup.png)
 
 ## Installation
 
