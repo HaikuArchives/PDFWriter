@@ -27,6 +27,7 @@
 # See Haiku Trac #20110.
 
 set -e
+: "${HOME:=/boot/home}"
 
 PRINTERS_DIR="$HOME/config/settings/printers"
 QUEUE_DIR="$PRINTERS_DIR/Save as PDF"
@@ -39,7 +40,7 @@ fi
 
 mkdir "$QUEUE_DIR"
 
-addattr -t mime_string  "BEOS:TYPE"          "application/x-vnd.Be.printer" "$QUEUE_DIR"
+addattr -t mime         "BEOS:TYPE"          "application/x-vnd.Be.printer" "$QUEUE_DIR"
 addattr                 "Printer Name"       "Save as PDF"                  "$QUEUE_DIR"
 addattr                 "Driver Name"        "PDF Writer"                   "$QUEUE_DIR"
 addattr                 "transport"          "Print To File"                "$QUEUE_DIR"
